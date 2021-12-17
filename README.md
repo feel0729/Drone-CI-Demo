@@ -1,5 +1,5 @@
 # Drone-CI-Demo
-練習架設 Drone CI
+## 練習架設 Drone CI
 
 參考 *用五分鐘安裝好 Drone 搭配 GitHub 自動化測試環境*
 
@@ -11,7 +11,7 @@ https://www.tpisoftware.com/tpu/articleDetails/1884
 
 ---
 
-前置工作:
+## 前置工作:
 
 1. 安裝Docker，並學會使用docker-compose
 2. 安裝ngrok
@@ -20,7 +20,7 @@ https://www.tpisoftware.com/tpu/articleDetails/1884
 
    > .env
 
-Drone CI 架設步驟:
+## Drone CI 架設步驟:
 
 1. 根據註解修改.env檔案,一併進行ngrok啟動及Github OAuth的設定
 2. 執行指令
@@ -32,7 +32,7 @@ Drone CI 架設步驟:
 6. 在Github上剛創的Repository修改幾個檔案，並commit & push
 7. 到本機Drone-CI網站觀察部署流水線運行狀態
 
-失敗了?請檢查:
+## 失敗了?請檢查:
 
 1. docker-compose.yml中對外的port與ngrok起的port有沒有一致?
 2. 啟動drone之前，Github OAuth需先設定完成。
@@ -40,7 +40,7 @@ Drone CI 架設步驟:
 
 ---
 
-為什麼選擇 Drone ?
+## 為什麼選擇 Drone ?
    
 * Docker Hub上的image都能拿來當作部署流水線的一環
    > maven:3-jdk-8
@@ -51,4 +51,6 @@ Drone CI 架設步驟:
    
 * 這也意味著可以自己打包一個image，應付各式各樣的部署需求
 
-**專案開發期光是探索使用者需求就夠你忙的了，估躁乏味的步驟就交給無人機吧！**
+---
+
+## **專案開發期光是探索使用者需求就夠你忙的了，估躁乏味的步驟就交給無人機吧！**
