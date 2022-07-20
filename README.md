@@ -54,3 +54,27 @@ https://www.tpisoftware.com/tpu/articleDetails/1884
 ---
 
 ## **專案開發期光是探索使用者需求就夠你忙的了，枯燥乏味的步驟就交給無人機吧！**
+
+---
+
+在本機架設要靠NGROK轉址，機器有時windows更新後自動重開機，NGROK要重新設定
+
+試著架設到AWS上的Elastic Beanstalk
+
+平台選擇DOCKER
+
+Elastic Beanstalk直接提供一組網址，把那組網址設定到.env DRONE_SERVER_HOST的欄位
+
+Github上的App setting 也改為這組網址
+
+*** 這邊要注意的是Elastic Beanstalk預設提供HTTP的服務，沒有HTTPS，要自己設定
+
+接著把這兩個檔案打包成.zip檔，上傳後就可以使用了
+
+   > docker-compose.yml
+
+   > .env
+
+2022-07-20 更新
+
+---
